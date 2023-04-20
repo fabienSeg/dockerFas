@@ -13,21 +13,19 @@ installation docker : https://www.domoticz.com/wiki/Docker
 ```
 
 récupération projet docker-compose :
-	$ git clone https://github.com/fabienSeg/dockerFas
-	$ cd mediaFas
+	$ git clone https://github.com/fabienSeg/dockerFas 
+	$ cd mediaFas 
 ```
 
 préparation de l'environement :
 ```
 ```
 
-créer l'arborescence suivante dans :
+Synchronisation sur Github :
 ```
 ```
-
-
-	$ git commit -m "first commit"
-	$ git branch -M main
-	$ git remote add origin https://github.com/fabienSeg/dockerFas.git
-	$ git push -u origin main
+	$ git commit -m "first commit" 
+	$ git branch -M main 
+	$ git remote add origin https://github.com/fabienSeg/dockerFas.git 
+	$ git push -u origin main 
 
