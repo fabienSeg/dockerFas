@@ -12,7 +12,7 @@ installation docker : https://www.domoticz.com/wiki/Docker
 	$ sudo reboot
 ```
 
-récupération projet docker-compose :
+récupération projet docker-compose : 
 	$ git clone https://github.com/fabienSeg/dockerFas 
 	$ cd mediaFas 
 ```
