@@ -1,6 +1,27 @@
 version: "3.8"
 services:
-#  nextcloud:
+  domoticz:
+    image: domoticz/domoticz:stable
+    container_name: domoticz
+    restart: unless-stopped
+    # Pass devices to container
+    # devices:
+    #   - "/dev/serial/by-id/usb-0658_0200-if00-port0:/dev/ttyACM0"
+    ports:
+      - 8080:8080
+      - 6144:6144
+      - 1443:1443
+    volumes:
+      - ./config:/opt/domoticz/userdata
+    environment:
+      - TZ=Europe/Amsterdam
+      #- LOG_PATH=/opt/domoticz/userdata/domoticz.log
+      #- PUID=1000
+      #- PGID=1000
+      #- WEBROOT=domoticz #optional
+      #- "DBASE=<path to database>" #optional
+    restart: unless-stopped
+    #  nextcloud:
 #    build: nextcloud_dockerfile
 #    container_name: nextcloud
 #    env_file: .env
